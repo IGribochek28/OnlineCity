@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro; // Для работы с текстом
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -72,5 +73,10 @@ public class MenuController : MonoBehaviour
     private void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("MainGame");
+    }
+
+    public void OfflineGame()
+    {
+        SceneManager.LoadScene(2);
     }
 }

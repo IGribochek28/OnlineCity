@@ -1,0 +1,87 @@
+First steps:
+
+To test the template, open the "DemoScene" scene inside the Scenes folder.
+Create a new Layer, and name it "Floor". Place the Floor object present in the hierarchy inside this Layer.
+Finally, set the game resolution to 1920x1080. 
+
+Your scene should now be fully functional.
+
+Adding new buildings:
+
+Inside the Prefabs folder, drag the "BuildindDefault" object into the scene. Place the new building inside the object's "BodyBuilding". All coordinates and positions must be 0.
+
+Next, adjust the size of the "Box Collider" component of the BuildindDefault. This should completely cover your new building. These are the measurements that the program uses to calculate collisions.
+
+Once this is done, save the construction as a new prefab, then drag it into the "All Buildings" field in GameControllers. Note that it is not possible to use position 0 of this field. This is reserved for the Mouse Selector.
+
+To call this new build, modify or create a new button, and using the "SelectBuild" function in the Game Controller, reference the position of your new build in the "All Buildings" field. For example, if it is position 9, pass 9 as a reference.
+
+Tip: The grid of the templete has a value of 1, so set the collision size of your buildings (the size of the box collider) slightly smaller than this. For example, if your building is 3, set it to 2.95.
+
+Delete button:
+
+The delete function is also present within the Game Controller. When turned on, each click will destroy the selected structure.  It can be turned off by clicking the same button.
+
+Camera:
+
+The camera is controlled with AWSD or the Arrow keys to move, Q and E to rotate and the mouse scroll to zoom. The speeds can be changed within the "BasicCameraController" component present in the scene camera.
+
+
+
+Acknowledgments:
+
+This temple features assets provided by Kay Lousberg, specifically the "KayKit : City Builder Bits" kit. These and much more can be found on the "itch.io" website.
+
+This template and all its contents can be used for personal and commercial content. Credits are welcome, but not obligatory.
+
+If you have any questions, please leave a comment on the site
+
+Gabriel Galam 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+PT-BR
+
+Primeiros Passos:
+
+Para testar o template, abra a cena "DemoScene" dentro da pasta Scenes.
+Crie um nova Layer, e coloque o nome de "Floor". Coloque o objeto Floor presente dentro da hieraquia dentro desta Layer.
+Por fim, coloque a resolução do jogo do 1920x1080. 
+
+Com isso, sua cena já deve estar completamente funcional.
+
+Adicionando novas Construções:
+
+Dentro da pasta Prefabs, arraste para cena o objeto "BuildindDefault". Coloque a nova construção dentro do "BodyBuilding" do objeto. Todas as coordenadas e posições devem ser 0.
+
+Em seguida, acerte o tamanho do componente "Box Collider" do BuildindDefault. Este deve cobrir completamente sua nova construção. Essas são as medidas que o programa usa para calcular as colisões.
+
+Uma vez feito isso, salve a construção como um novo prefab, e em seguida arrasteo para dentro do campo "All Buildings" presente em GameControllers. Attenção, não é possivel usar a posição 0 deste campo. Esta é reservada para o Mouse Selector.
+
+Para chamar esta nova contrução, modifique ou crie um novo botão, e usando a função "SelectBuild" presente em Game Controller, passe como referencia a posição da sua nova contrução dentro do campo "All Buildings". Por exemplo, caso seja a posição 9, passe 9 como referencia.
+
+Dica: O grid do templete tem valor de 1, por tanto coloque o tamanho de colisão de suas contruções (o size do box collider) ligeiramente menor que isso. Por exemplo, se sua construção tiver 3 de tamanho, coloque 2.95.
+
+Resolvendo problemas:
+
+Caso o indicador de colisão esteja desalinhado com a contrução, dentro da propria contrução, o componente "Building Base" pode ser usado para corrigir isso. Aumente e diminua os valores, e teste recovocando sua contrução.
+
+Botão Delete:
+
+A função delete também esta presente dentro do Game Controller. Ao ser ligada, cada clique ira destruir a estrutura selecionada.  Ela pode ser desligada clicando no mesmo botão.
+
+Camera:
+
+A camera é controlada com AWSD ou as Setas para movimentação, Q e E para girar e o scroll do mouse controla o zoom. As velocidades podem ser alteradas dentro com componente "BasicCameraController" presente na camera da cena.
+
+
+
+Agradecimentos:
+
+Esse templete conta com assets disponibilizados por Kay Lousberg, especificamente o kit "KayKit : City Builder Bits". Estes e muito mais podem ser encontrados dentro do site "itch.io"
+
+Este template e todo seu conteudo pode ser usado para conteudos pessoais e comerciais. Créditos são bem vindos, mas não obrigatorios.
+
+Qualquer dúvida, deixe um comentario no site
+
+Gabriel Galam 
